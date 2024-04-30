@@ -258,8 +258,10 @@
             </div>
         </div>
      </section>
-     <!--.......................... Skills section end here........................ -->
+     <!--.......................... Skills section end here....................... -->
 
+
+     <!-- .......................project Section start............................ -->
      <section id="portfolio" class="portfolio">
         <div class="main-text">
             <span>What i will do for you</span>
@@ -267,16 +269,16 @@
         </div>
         <div class="container">
             <div class="filter-buttons">
-                <button>do</button>
-                <button class="btn">All</button>
-                <button class="btn">Frontend</button>
-                <button class="btn">FullStack</button>
-                <button class="btn">App</button>
+               
+                <button class="btn" data-filter="all">All</button>
+                <button class="btn" data-filter=".frontend">Frontend</button>
+                <button class="btn" data-filter=".fullstack">FullStack</button>
+                <button class="btn" data-filter=".app">App</button>
             </div>
             <div class="portfolio-gallery">
-                <div class="port-box">
+                <div class="port-box mix frontend">
                     <div class="port-image">
-                        <img src="/image/flip.jpg" alt="">
+                        <img src="/PortFolio/image/flip.jpg" alt="">
                     </div>
                     <div class="port-content">
                         <h3>Graphic-Designer</h3>
@@ -285,9 +287,9 @@
                     </div>
                 </div>
 
-                <div class="port-box">
+                <div class="port-box mix frontend">
                     <div class="port-image">
-                        <img src="/image/flip.jpg" alt="">
+                        <img src="/PortFolio/image/flip.jpg" alt="">
                     </div>
                     <div class="port-content">
                         <h3>Graphic-Designer</h3>
@@ -296,9 +298,9 @@
                     </div>
                 </div>
 
-                <div class="port-box">
+                <div class="port-box mix fullstack">
                     <div class="port-image">
-                        <img src="/image/flip.jpg" alt="">
+                        <img src="/PortFolio/image/flip.jpg" alt="">
                     </div>
                     <div class="port-content">
                         <h3>Graphic-Designer</h3>
@@ -307,9 +309,9 @@
                     </div>
                 </div>
 
-                <div class="port-box">
+                <div class="port-box mix fullstack">
                     <div class="port-image">
-                        <img src="/image/flip.jpg" alt="">
+                        <img src="/PortFolio/image/flip.jpg" alt="">
                     </div>
                     <div class="port-content">
                         <h3>Graphic-Designer</h3>
@@ -318,9 +320,9 @@
                     </div>
                 </div>
 
-                <div class="port-box">
+                <div class="port-box mix app">
                     <div class="port-image">
-                        <img src="/image/flip.jpg" alt="">
+                        <img src="/PortFolio/image/flip.jpg" alt="">
                     </div>
                     <div class="port-content">
                         <h3>Graphic-Designer</h3>
@@ -329,9 +331,9 @@
                     </div>
                 </div>
 
-                <div class="port-box">
+                <div class="port-box mix app">
                     <div class="port-image">
-                        <img src="/image/flip.jpg" alt="">
+                        <img src="/PortFolio/image/flip.jpg" alt="">
                     </div>
                     <div class="port-content">
                         <h3>Graphic-Designer</h3>
@@ -343,7 +345,37 @@
         </div>
 
      </section>
+     <!-- .......................project Section start............................ -->
+
+
+     <!-- ..........................contact section start......................... -->
+     <section id="contact" class="contact">
+        <div class="main-text">
+            <span>Ask Me Any Question</span>
+            <h2>Contact Me </h2>
+        </div>
+
+        <form action="#">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="email" placeholder="Enter Your Email">
+            <input type="text" placeholder="Enter Your Address">
+            <input type="number" placeholder=" Your Phone No.">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <div class="btn-box formbtn">
+
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
+     </section>
+     <!-- ............................footer section end ...........................-->
+
+
+     <!-- ..........................footer section start........................... -->
+     <footer>
+        <p>Copyright &copy; 2024 by Anurag Singh || All Reserved</p>
+     </footer>
 </body>
+<script src="mixitup.min.js"></script>
 <script src="script.js"></script>
 
 </html>

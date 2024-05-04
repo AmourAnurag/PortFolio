@@ -79,3 +79,28 @@ const header=document.querySelector("header");
 window.addEventListener("scroll",function() {
   header.classList.toggle("sticky",window.scrollY>50)
 })
+
+//toggle icon navbar
+let menuIcon=document.querySelector("#menu-icon")
+let menu=document.querySelector(".fa-bars")
+let navlist=document.querySelector(".navlist")
+let count=1;
+menuIcon.onclick=()=>{
+  // menuIcon.classList.toggle("fa-x")
+  // menu.classList.remove("fa-bars")
+  if (count) {
+    menuIcon.style.transform="rotate(-180deg)"
+    count--;
+  } else {
+    menuIcon.style.transform="rotate(180deg)"
+    menuIcon.style.transition="1s"
+   count++;
+  }
+  menu.classList.toggle("fa-x")
+  navlist.classList.toggle("open")
+}
+
+window.onscroll=()=>{
+  menu.classList.remove('fa-x');
+  navlist.classList.remove('open')
+}

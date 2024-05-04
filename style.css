@@ -107,6 +107,8 @@ span{
     z-index: 10001;
     cursor: pointer;
     margin-left: 25px;
+    text-align: center;
+    width: 35px;
     background: var(--hover-color);
     border-radius: 4px;
     color: var(--secon-bg-color);
@@ -677,5 +679,46 @@ footer a i{
         --norma-font: 1.8rem;
         --neon-box-shadow: 0 0 0.8rem aqua;
         --h2-font: 3rem;
+    }
+    .home-content{
+        margin-top: 5rem;
+    }
+    .social-icons{
+        margin-top: 2rem;
+    }
+}
+@media(max-width:768px) {
+    #menu-icon{
+        display: block;
+        transition: all .4s ease;
+    }
+    #menu-icon.fa-x{
+        transform: rotate(-180deg);
+    }
+    .navlist{
+        display: flex;
+        position: absolute;
+        top: -1000px;
+        right:0 ;
+        left: 0;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        padding: 0 5%;
+        transition: all 0.45s ease;
+    }
+    .navlist a{
+        display: block;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .navlist.open{
+     top: 100%;
+    }
+    .home{
+        grid-template-columns: 1fr;
+    }
+    .home image{
+        margin-bottom: 5rem;
     }
 }

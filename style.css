@@ -721,4 +721,24 @@ footer a i{
     .home image{
         margin-bottom: 5rem;
     }
+    .skill-main{
+        grid-template-columns: 1fr;
+    }
+    .filter-buttons{
+        margin: 2rem 0;
+    }
+    footer p{
+        font-size: 0.5rem;
+    }
+}
+@media(max-width:420px){
+    html{
+        font-size:80% ;
+    }
+    footer p{
+        font-size: 0.6rem;
+    }
+    .filter-buttons .btn{
+        font-size: 0.8rem;
+    }
 }

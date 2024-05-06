@@ -586,6 +586,10 @@ section{
     text-align: center;
     max-width: 50rem;
     margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 3rem;
 }
 .contact form input,

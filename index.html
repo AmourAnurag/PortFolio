@@ -273,7 +273,7 @@
                 <button class="bttn" data-filter="all">All</button>
                 <button class="bttn" data-filter=".frontend">Frontend</button>
                 <button class="bttn" data-filter=".fullstack">FullStack</button>
-                <button class="bttn" data-filter=".app">App</button>
+                <button class="bttn" data-filter=".app">React</button>
             </div>
             <div class="portfolio-gallery">
                 <div class="port-box mix frontend">
@@ -356,15 +356,15 @@
             <h2>Contact Me </h2>
         </div>
 
-        <form action="#">
-            <input type="text" placeholder="Enter Your Name">
-            <input type="email" placeholder="Enter Your Email">
-            <input type="text" placeholder="Enter Your Address">
-            <input type="number" placeholder=" Your Phone No.">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+        <form action="https://formspree.io/f/moqgkobo" method="post">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+            <input type="text" name="address" placeholder="Enter Your Address" required>
+            <input type="number" name="Phone" placeholder=" Your Phone No." required>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
             <div class="btn-box formbtn">
 
-                <button type="submit" class="btn">Send Message</button>
+                <button id="submit" type="submit" class="btn">Send Message</button>
             </div>
         </form>
      </section>

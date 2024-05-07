@@ -654,6 +654,11 @@ footer a i{
     transform: translateY(-300px);
     transition: 3s;
 }
+.scroll-right{
+    opacity: 0;
+    transform: translatex(-300px);
+    transition: 3s;
+}
 .show-items{
     opacity: 1;
     transform: translateX(0);

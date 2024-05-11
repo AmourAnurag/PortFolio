@@ -95,7 +95,7 @@ menuIcon.onclick=()=>{
     count--;
   } else {
     menuIcon.style.transform="rotate(180deg)"
-    menuIcon.style.transition="1s"
+    menuIcon.style.transition="2s"
    count++;
   }
   menu.classList.toggle("fa-x")

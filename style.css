@@ -475,7 +475,7 @@ section{
     animation-delay: calc(var(--i)*0.05s);
 }
 
-/* ...........................portfolio /section................ */
+/* ...........................project /section................ */
 .filter-buttons{
     margin: 2rem;
     text-align: center;
@@ -578,6 +578,92 @@ section{
     color: white;
 }
 
+/* Certificate section start */
+
+.certificate{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 2rem;
+   
+}
+.cert-box{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #292e33;
+    display: flex;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    border: 2px solid var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+}
+.cert-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.cert-image img{
+    width: 100%;
+    opacity: 0.5s;
+    height: 100%;
+    transition: 0.5s;
+}
+.cert-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* background: linear-gradient(#03f2fb,rgba(0, 0, 0, 0.763)); */
+    background-color: #12f7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0.2rem;
+}
+.cert-box:hover .cert-content{
+    opacity: 1;
+}
+.cert-box:hover .cert-image img{
+    transform: scale(1.1);
+}
+.cert-content h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+.cert-content p{
+    font-size: 1rem;
+    letter-spacing: 0;
+    color: black;
+    font-weight: 600;
+    margin: 5px 0 15px 0;
+}
+
+.cert-content a{
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--hover-color);
+    outline: 2px solid var(--bg-color);
+}
+.cert-content a i{
+    font-size: 1.3rem;
+    color: white;
+}
+
+/* Certificate section start */
+
 /* contact section start here */
 .contact{
     background-color: var(--secon-bg-color);
@@ -647,17 +733,17 @@ footer a i{
 }
 .scroll-bottom{
     opacity: 0;
-    transform: translateY(300px);
+    transform: translateY(200px);
     transition: 3s;
 }
 .scroll-top{
     opacity: 0;
-    transform: translateY(-300px);
+    transform: translateY(-200px);
     transition: 3s;
 }
 .scroll-right{
     opacity: 0;
-    transform: translatex(-300px);
+    transform: translatex(-200px);
     transition: 3s;
 }
 .show-items{
@@ -742,7 +828,7 @@ footer a i{
         transition: all .4s ease;
     }
     #menu-icon.fa-x{
-        transform: rotate(-180deg);
+        transform: rotate(-360deg);
     }
     .navlist{
         display: flex;

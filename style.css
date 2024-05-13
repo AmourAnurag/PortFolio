@@ -757,6 +757,33 @@ footer a i{
     opacity: 1;
     transform: translateX(0);
 }
+#skill-container{
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.languages{
+    max-height: 100px ;
+    
+    max-width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 25px;
+    align-items: center;
+}
+.languages i{
+    font-size: 60px;
+   
+    color: aqua;
+}
 /* ......................keyframes.............................  */
 @keyframes html{
     0%{ width: 5%; }

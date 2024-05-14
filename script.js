@@ -1,5 +1,4 @@
 const languages = [
-  
   "fa-brands fa-java",
   "fa-brands fa-python",
   "fa-brands fa-html5",
@@ -11,12 +10,7 @@ const languages = [
   "fa-brands fa-github",
   "fa-brands fa-node",
   "fa-solid fa-database",
-
-  
-  
-  
 ];
-console.log(languages);
 let container = document.getElementById("skill-container");
 let html = ""; // Initialize an empty string to store HTML content
 for (let index = 0; index < languages.length; index++) {
@@ -25,17 +19,8 @@ for (let index = 0; index < languages.length; index++) {
     <i class='${languages[index]}'></i>
   </div>`;
 }
-container.innerHTML = html; 
-
-// languages.map(url=>container.innerHTML=`<div class="languages">
-// <i class='${url}'></i>
-
-// </div>`)
-// // container.innerHTML = `<div class="languages">
-// <i class='${languages[0]}'></i>
-// </div> <div class="languages">
-// <i class='${languages[0]}'></i>
-// </div>`;
+container.innerHTML = html;
+//adding skills end
 
 let words = document.querySelectorAll(".word");
 
@@ -76,25 +61,7 @@ let changeText = () => {
 };
 changeText();
 setInterval(changeText, 4000);
-
-// ..................................CIRCLE SKILLS .............................
-const circles = document.querySelectorAll(".circle");
-circles.forEach((elem) => {
-  var dots = elem.getAttribute("data-dots");
-  var marked = elem.getAttribute("data-percent");
-  var percent = Math.floor((dots * marked) / 100);
-  var points = "";
-  var rotate = 360 / dots;
-  for (let i = 0; i < dots; i++) {
-    points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
-  }
-  elem.innerHTML = points;
-
-  const pointsMarked = elem.querySelectorAll(".points");
-  for (let i = 0; i < percent; i++) {
-    pointsMarked[i].classList.add("marked");
-  }
-});
+//changing text end here
 
 // mix it up portfolio site
 var mixer = mixitup(".portfolio-gallery");

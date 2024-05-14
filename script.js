@@ -1,11 +1,20 @@
 const languages = [
-  "fa-brands fa-bootstrap",
-  "fa-brands fa-git-alt",
-  "fa-brands fa-css3-alt",
-  "fa-brands fa-react",
-  "fa-brands fa-square-js",
+  
   "fa-brands fa-java",
+  "fa-brands fa-python",
   "fa-brands fa-html5",
+  "fa-brands fa-css3-alt",
+  "fa-brands fa-square-js",
+  "fa-brands fa-bootstrap",
+  "fa-brands fa-react",
+  "fa-brands fa-git-alt",
+  "fa-brands fa-github",
+  "fa-brands fa-node",
+  "fa-solid fa-database",
+
+  
+  
+  
 ];
 console.log(languages);
 let container = document.getElementById("skill-container");

@@ -767,9 +767,8 @@ footer a i{
     align-items: center;
 }
 .languages{
-    max-height: 100px ;
-    
-    max-width: 100px;
+    min-height: 130px ;
+    min-width: 130px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -778,10 +777,12 @@ footer a i{
     margin: 10px;
     padding: 25px;
     align-items: center;
+    border: 2px solid var(--hover-color);
+    outline: 3px solid var(--bg-color);
 }
 .languages i{
-    font-size: 60px;
-   
+    font-size: 70px;
+  
     color: aqua;
 }
 /* ......................keyframes.............................  */
@@ -927,9 +928,21 @@ footer a i{
         
     }
     .section-services .service-box{
-        width: 280px;
+        width: 300px;
     }
     .service-btn.btn-box{
         width: 330px;
+    }
+    .languages{
+        min-height: 80px;
+        padding: 15px;
+        margin: 5px;
+        min-width:80px
+    }
+    .languages i{
+        font-size: 35px;
+    }
+    #skills{
+        padding: 50px 0px;
     }
 }
